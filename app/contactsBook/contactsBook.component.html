@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="sidenav">
+
+  <contacts-list
+    [contactsList]="contactsList"
+    [(selectedContact)]="selectedContact">
+  </contacts-list>
+
+</div>
+
+<div class="content">
+
+  <contact-details [contact]="selectedContact"></contact-details>
+
+  <add-contact [contactsList]="contactsList"></add-contact>
+
+</div>

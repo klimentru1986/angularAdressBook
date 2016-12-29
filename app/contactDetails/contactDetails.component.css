@@ -1,0 +1,71 @@
+.contact-details {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  min-height: 194px;
+  margin: 10px;
+  margin-bottom: 24px;
+  min-width: 216px;
+  padding-bottom: 48px;
+  position: relative;
+  -webkit-transition: box-shadow .5s;
+  transition: box-shadow .5s;
+}
+
+.contact-details:hover {
+  border: 2px solid #2196F3;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.24), 0 0 8px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.contact-details__title {
+  color: #607D8B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+  padding: 16px 16px 0 16px;
+  text-transform: none;
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-details:hover .contact-details__title {
+  color: #2196F3;
+  padding: 14px 14px 0 14px;
+}
+
+.contact-details__content {
+  color: #78909C;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.contact-details:hover .contact-details__content {
+  color: #546E7A;
+  padding: 0 14px;
+}
+
+.contact-details__footer{
+  bottom: 0;
+  border-top: 1px solid #ECEFF1;
+  box-sizing: border-box;
+  line-height: 48px;
+  left: 0;
+  padding: 0 16px;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  color: #1976D2;
+}
+
+.contact-details:hover .contact-details__footer{
+  line-height: 44px;
+  padding: 0 14px;
+  color: #1E88E5;
+}

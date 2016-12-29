@@ -1,0 +1,41 @@
+
+.contacts-list{
+  margin: 0;
+  overflow: auto;
+  height: calc(100% - 53px);
+}
+
+.contact-item{
+  position: relative;
+  box-sizing: border-box;
+  line-height: 48px;
+  width: 100%;
+  padding: 0 15px;
+  color: #607D8B;
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  border-bottom: 1px solid rgba(207,216,220,0.56);
+  cursor: pointer;
+}
+
+.selected-item{
+  background: rgba(207,216,220,0.24);
+  color: #1976D2;
+  font-weight: 600;
+}
+
+.delete-contact{
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 5px;
+  line-height: 14px;
+}
+
+.contact-item:hover .delete-contact{
+  visibility: visible;
+}

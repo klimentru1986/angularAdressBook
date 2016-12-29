@@ -1,0 +1,14 @@
+<div class="contacts-list" *ngIf="contactsList && contactsList.length">
+  <div class="contact-item"
+       *ngFor="let contact of contactsList"
+       [ngClass]="{'selected-item': contact === selectedContact}">
+    <div class="contact-name"
+         (click)="selectContact(contact)">
+      {{contact.name}}
+    </div>
+    <div class="delete-contact"
+         (click)="deleteContact(contact)">
+      x
+    </div>
+  </div>
+</div>

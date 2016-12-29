@@ -1,0 +1,47 @@
+<div class="add-contact__button" (click)="addContactToggle()">+</div>
+<form #addContactForm="ngForm"
+      class= "add-contact-form"
+      [hidden]="!addContactShow"
+      (ngSubmit)="addContact(); addContactForm.reset()">
+  <div class="form-group">
+    <input type="text"
+           class="form-group__input"
+           id="name"
+           [(ngModel)]="newContact.name"
+           name="name"
+           required
+           #name="ngModel">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label for="name" class="form-group__label">Имя</label>
+    <div class="error-message" [hidden]="name.valid || !name.touched">Введите Имя</div>
+  </div>
+  <div class="form-group">
+    <input type="text"
+           class="form-group__input"
+           id="surname"
+           [(ngModel)]="newContact.surname"
+           name="surname"
+           minlength="2"
+           #surname="ngModel">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label for="surname" class="form-group__label">Фамилия</label>
+  </div>
+  <div class="form-group">
+    <input type="text"
+    class="form-group__input"
+    id="phone"
+    [(ngModel)]="newContact.phone"
+    name="phone"
+    #phone="ngModel"
+    required>
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label for="phone" class="form-group__label">Телефон</label>
+    <div class="error-message" [hidden]="phone.valid || !phone.touched">Введите Телефон</div>
+  </div>
+  <div class="form-group-submit">
+    <input type="submit" class="form-group__submit" [disabled]="!addContactForm.valid" value="Добавить">
+  </div>
+</form>

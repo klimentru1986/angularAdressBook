@@ -1,0 +1,19 @@
+.header-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 53px;
+  background: #1976D2;
+  z-index: 5;
+}
+
+.header-title{
+  margin: 0;
+  color: white;
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  line-height: 53px;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 20px;
+}
