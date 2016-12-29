@@ -12,6 +12,7 @@ import {ContactsService} from '../contactsService/contacts.service'
   styleUrls: ['contactsBook.component.css']
 })
 
+
 export class ContactsBook implements OnInit{
   contactsList: IContact[];
 

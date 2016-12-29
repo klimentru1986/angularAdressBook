@@ -17,14 +17,14 @@ $ npm start
 ### Литература
 
 TypeScript:
-https://basarat.gitbooks.io/typescript/content/docs/getting-started.html
-http://www.typescriptlang.org/play/index.html
-http://metanit.com/web/typescript/
+* https://basarat.gitbooks.io/typescript/content/docs/getting-started.html
+* http://www.typescriptlang.org/play/index.html
+* http://metanit.com/web/typescript/
 
 Angular быстрый старт:
-https://github.com/angular/quickstart
-https://habrahabr.ru/company/infopulse/blog/305818/
+* https://github.com/angular/quickstart
+* https://habrahabr.ru/company/infopulse/blog/305818/
 
 Angular:
-https://angular.io
-http://metanit.com/web/angular2/
+* https://angular.io
+* http://metanit.com/web/angular2/
