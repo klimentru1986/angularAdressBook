@@ -10,10 +10,11 @@ import {ContactsService} from "../contactsService/contacts.service";
   styleUrls: ['contactsList.component.css']
 })
 
-export class ContactsList {
+export class ContactsList{
   @Input() contactsList: IContact[];
   @Input() selectedContact: IContact;
   @Output() selectedContactChange = new EventEmitter <IContact>();
+  contactsSearch: string = '';
 
   constructor(private contactsService: ContactsService) {
   }
@@ -33,4 +34,5 @@ export class ContactsList {
         }
       })
   }
+
 }

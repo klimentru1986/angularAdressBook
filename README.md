@@ -1,10 +1,15 @@
 # Книга контактов
 
 ### Описание
+
 Проект для презентации Angular2 + Typescirpt
-Презентация:
+
+##### Презентация:
+
 https://docs.google.com/presentation/d/1gcRkE4MYA09h-rfsKqLzwd84f9--toxEn1DRYuTSo8M/edit#slide=id.g1b520e6dbc_0_66
-Пример plnkr:
+
+##### Пример plnkr:
+
 http://plnkr.co/edit/z3biVSbWNx9YqQqEZ6d7?p=preview
 
 ### Установка

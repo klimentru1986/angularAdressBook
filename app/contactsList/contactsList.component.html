@@ -1,6 +1,11 @@
+<div class="contacts-search__container">
+  <input type="text"
+         [(ngModel)]="contactsSearch"
+         class="contacts-search">
+</div>
 <div class="contacts-list" *ngIf="contactsList && contactsList.length">
   <div class="contact-item"
-       *ngFor="let contact of contactsList"
+       *ngFor="let contact of contactsList | filter:contactsSearch"
        [ngClass]="{'selected-item': contact === selectedContact}">
     <div class="contact-name"
          (click)="selectContact(contact)">

@@ -2,7 +2,7 @@
 .contacts-list{
   margin: 0;
   overflow: auto;
-  height: calc(100% - 53px);
+  height: calc(100% - 53px - 48px);
 }
 
 .contact-item{
@@ -38,4 +38,24 @@
 
 .contact-item:hover .delete-contact{
   visibility: visible;
+}
+
+.contacts-search__container{
+  padding-top: 8px;
+  box-sizing: border-box;
+  height: 48px;
+  background: #B0BEC5;
+  text-align: center;
+}
+
+.contacts-search{
+  height: 28px;
+  border-radius: 14px;
+  border: none;
+  padding-left: 14px;
+  width: 220px;
+}
+
+.contacts-search:focus{
+  outline: none;
 }

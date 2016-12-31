@@ -14,6 +14,7 @@ import {ContactDetails}  from './contactDetails/contactDetails.component';
 import {AddContact} from "./addContact/addContact.component";
 //Импорт сервисов
 import {ContactsService} from './contactsService/contacts.service';
+import {FilterPipe} from "./pipes/filter.pipe";
 
 //Декоратор NgModule
 @NgModule({
@@ -25,10 +26,18 @@ import {ContactsService} from './contactsService/contacts.service';
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   //Декларирование в модуле компонентов
-  declarations: [ContactsBook, AppHeader, ContactsList, ContactDetails, AddContact],
+  declarations: [
+    ContactsBook,
+    AppHeader,
+    ContactsList,
+    ContactDetails,
+    AddContact,
+    FilterPipe
+  ],
   //Декларирование используемых сервисов
   providers: [ContactsService],
   //Определение стартового компонента
   bootstrap: [ContactsBook]
 })
-export class AppModule {}
+export class AppModule {
+}
